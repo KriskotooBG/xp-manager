@@ -42,8 +42,31 @@
 								return true;
 							}
 						}
-						else if(!is_numeric($args[0]) && isset($args[1]) && !empty($args[1])){
+						else if(!is_numeric($args[0]) && is_numeric($args[1]) && isset($args[1]) && !empty($args[1])){
 							$target = $this->getServer()->getPlayer($args[0]);
+							
+							if($target instanceof Player){
+								if(intval($args[1]) >= 0 && intval($args[1]) <= 24791){
+									if($sender->hasPermission("xp.setPlayerXP")){
+										$target->setXpLevel(intval($args[1]));
+										$target->sendMessage(TF::GREEN . "Your XP level has been set to " . intval($args[1]) . " by " . $sender->getName());
+										$sender->sendMessage(TF::GREEN . "Set " . $target->getName() . "'s XP level to " . intval($args[1]));
+										return true;
+									}
+									else{
+										$sender->sendMessage(TF::RED . "You do not have permission to use that command.");
+										return true;
+									}
+								}
+								else{
+									$sender->sendMessage(TF::RED . "Invalid xp level ammount! Please provide a number between 0 and 24791!");
+									return true;
+								}
+							}
+							else{
+								$sender->sendMessage(TF::RED . "Did not find an online player with a name of " . $args[0]);
+								return true;
+							}
 						}
 						else{
 							$sender->sendMessage(TF::GOLD . "Ussage: /xp <(Optional)player> <level>");
