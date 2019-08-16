@@ -1,4 +1,4 @@
-# PocketMine XP
+# XP-Manager
 A small plugin to help server owners and and staff manage player xp levels!
 
 # Features:
