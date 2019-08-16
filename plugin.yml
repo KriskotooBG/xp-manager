@@ -1,0 +1,48 @@
+name: XP-Manager
+description: XP-Manager lets server owners and staff manage XP levels easily!
+main: kriskotooBG\xpmanager\Main
+api: [3.0.0]
+version: 1.0.1
+author: kriskotooBG
+
+
+
+commands:
+ xp:
+  description: "Use this command to set your, or another player's XP level"
+  usage: "/xp <(optional)playername> <level>"
+
+ addxp:
+  description: "Use this command to add to your, or another player's XP level"
+  usage: "/addxp <(optional)playername> <ammount>"
+
+ remxp:
+  description: "Use this command to remove some of your, or another player's XP level"
+  usage: "/remxp <(optional)playername> <ammount>"
+
+
+
+permissions:
+ xp.setOwnXP:
+  default: op
+  description: "Gives a player the permission to set his XP level"
+
+ xp.setPlayerXP:
+  default: op
+  description: "Gives a player the permission to set other player's XP levels"
+
+ xp.addOwnXP:
+  default: op
+  description: "Gives a player the permission to add to his XP level"
+
+ xp.addPlayerXP:
+  default: op
+  description: "Gives a player the permission to add to other player's XP levels"
+
+ xp.remOwnXP:
+  default: op
+  description: "Gives a player the permission to remove from his XP level"
+
+ xp.remPlayerXP:
+  default: op
+  description: "Gives a player the permission to remove from other player's XP levels"
