@@ -1,5 +1,6 @@
 # XP-Manager
-A small Pocketmine plugin to help server owners and and staff manage player xp levels easily!
+A small Pocketmine-MP plugin to help server owners and and staff manage player xp levels easily!
+Compatible with API versions: 3.0.0 and up!
 
 # Features:
  - /xp `<ammount>`: Sets your current XP level to the `<ammont>`
