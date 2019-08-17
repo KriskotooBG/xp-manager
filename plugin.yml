@@ -1,6 +1,6 @@
 name: XP-Manager
 description: XP-Manager lets server owners and staff manage XP levels easily!
-main: kriskotooBG\xpmanager\Main
+main: kriskotooBG\XPMaster\Main
 api: [3.0.0]
 version: 1.0.1
 author: kriskotooBG
@@ -11,6 +11,10 @@ commands:
  xp:
   description: "Use this command to set your, or another player's XP level"
   usage: "/xp <(optional)playername> <level>"
+
+ seexp:
+  description: "Use this command to see another player's XP level"
+  usage: "/seexp <playername>"
 
  addxp:
   description: "Use this command to add to your, or another player's XP level"
@@ -23,6 +27,10 @@ commands:
 
 
 permissions:
+ xp.seePlayerXP:
+  default: op
+  description: "Gives a player the permission to see other player's XP levels"
+
  xp.setOwnXP:
   default: op
   description: "Gives a player the permission to set his XP level"
