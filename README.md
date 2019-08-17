@@ -5,16 +5,23 @@ Compatible with API versions: 3.0.0 and up!
 
 
 # Commands:
- - /xp `<ammount>`: Sets your current XP level to the `<ammont>` **PERMISSION: xp.setOwnXP**
- - /xp `<player>` `<ammount>`: Sets the XP level of the `<player>` to the `<ammount>` **PERMISSION: xp.setPlayerXP**
+- **xp**
+  - /xp `<ammount>`: Sets your current XP level to the `<ammont>` **PERMISSION: xp.setOwnXP**
+  - /xp `<player>` `<ammount>`: Sets the XP level of the `<player>` to the `<ammount>` **PERMISSION: xp.setPlayerXP**
  
- - /seexp `<player>`: Tells you the `<player>`'s xp level **PERMISSION: xp.seePlayerXP**
+- **See XP**
+  - /seexp `<player>`: Tells you the `<player>`'s xp level **PERMISSION: xp.seePlayerXP**
 
- - /remxp `<ammount>`: Removes `<ammount>` from your current xp level **PERMISSION: xp.remOwnXP**
- - /remxp `<player>` `<ammount>`: Removes `<ammount>` from the `<player>`'s current xp level **PERMISSION: xp.remPlayerXP**
-  
- - /addxp `<ammount>`: Adds `<ammount>` to your current xp level **PERMISSION: xp.remOwnXP**
- - /addxp `<player>` `<ammount>`: Adds `<ammount>` to the `<player>`'s current xp level **PERMISSION: xp.remPlayerXP**
+
+- **Remove XP**
+  - /remxp `<ammount>`: Removes `<ammount>` from your current xp level **PERMISSION: xp.remOwnXP**
+  - /remxp `<player>` `<ammount>`: Removes `<ammount>` from the `<player>`'s current xp level **PERMISSION: xp.remPlayerXP**
+
+
+- **Add XP**
+  - /addxp `<ammount>`: Adds `<ammount>` to your current xp level **PERMISSION: xp.remOwnXP**
+  - /addxp `<player>` `<ammount>`: Adds `<ammount>` to the `<player>`'s current xp level **PERMISSION: xp.remPlayerXP**
+
 
 
 # Permissions:
