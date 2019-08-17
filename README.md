@@ -1,5 +1,5 @@
 # XP-Manager
-A small plugin to help server owners and and staff manage player xp levels!
+A small PocketmineMP plugin to help server owners and and staff manage player xp levels!
 
 # Features:
  - /xp `<ammount>`: Sets your current XP level to the `<ammont>`
