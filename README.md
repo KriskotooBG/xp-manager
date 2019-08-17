@@ -3,17 +3,18 @@ A Pocketmine-MP plugin to help server owners and and staff manage player xp leve
 All commands have seperate permissions, giving you full control over all the features of this plugin!
 Compatible with API versions: 3.0.0 and up!
 
-# Features:
- - /xp `<ammount>`: Sets your current XP level to the `<ammont>` PERMISSION: xp.setOwnXP
- - /xp `<player>` `<ammount>`: Sets the XP level of the <player> to the `<ammount>` PERMISSION: xp.setPlayerXP
- 
- - /seexp `<player>`: Tells you the `<player>`'s xp level PERMISSION: xp.seePlayerXP
 
- - /remxp `<ammount>`: Removes `<ammount>` from your current xp level PERMISSION: xp.remOwnXP
- - /remxp `<player>` `<ammount>`: Removes `<ammount>` from the `<player>`'s current xp level PERMISSION: xp.remPlayerXP
+# Commands:
+ - /xp `<ammount>`: Sets your current XP level to the `<ammont>` **PERMISSION: xp.setOwnXP**
+ - /xp `<player>` `<ammount>`: Sets the XP level of the `<player>` to the `<ammount>` **PERMISSION: xp.setPlayerXP**
+ 
+ - /seexp `<player>`: Tells you the `<player>`'s xp level **PERMISSION: xp.seePlayerXP**
+
+ - /remxp `<ammount>`: Removes `<ammount>` from your current xp level **PERMISSION: xp.remOwnXP**
+ - /remxp `<player>` `<ammount>`: Removes `<ammount>` from the `<player>`'s current xp level **PERMISSION: xp.remPlayerXP**
   
- - /addxp `<ammount>`: Adds `<ammount>` to your current xp level PERMISSION: xp.remOwnXP
- - /addxp `<player>` `<ammount>`: Adds `<ammount>` to the `<player>`'s current xp level PERMISSION: xp.remPlayerXP
+ - /addxp `<ammount>`: Adds `<ammount>` to your current xp level **PERMISSION: xp.remOwnXP**
+ - /addxp `<player>` `<ammount>`: Adds `<ammount>` to the `<player>`'s current xp level **PERMISSION: xp.remPlayerXP**
 
 
 # Permissions:
