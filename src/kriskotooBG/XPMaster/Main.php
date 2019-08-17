@@ -43,7 +43,7 @@
 								return true;
 							}
 						}
-						else if(!is_numeric($args[0]) && is_numeric($args[1]) && isset($args[1]) && !empty($args[1])){
+						else if(!is_numeric($args[0]) && isset($args[1]) && !empty($args[1]) && is_numeric($args[1])){
 							$target = $this->getServer()->getPlayer($args[0]);
 							
 							if($target instanceof Player){
@@ -80,6 +80,31 @@
 					}
 					break;
 				
+				case "seexp":
+					if(isset($args[0]) && !empty($args[0])){
+						if($sender->hasPermission("xp.seePlayerXP")){
+							$target = $this->getServer()->getPlayer($args[0]);
+							
+							if($target instanceof Player){
+								$sender->sendMessage(TF::GREEN . $args[0] . "'s XP level is: " . $target->getXpLevel());
+								return true;
+							}
+							else{
+								$sender->sendMessage(TF::RED . "Did not find an online player with a name of " . $args[0]);
+								return true;
+							}
+						}
+						else{
+							$sender->sendMessage(TF::RED . "You do not have permission to use that command.");
+							return true;
+						}
+					}
+					else{
+						$sender->sendMessage(TF::GOLD . "Ussage: /seexp <player>");
+						return true;
+					}
+					break;
+				
 				case "addxp":
 					if(isset($args[0]) && !empty($args[0])){
 						if(is_numeric($args[0])){
@@ -111,7 +136,7 @@
 								return true;
 							}
 						}
-						else if(!is_numeric($args[0]) && is_numeric($args[1]) && isset($args[1]) && !empty($args[1])){
+						else if(!is_numeric($args[0]) && isset($args[1]) && !empty($args[1]) && is_numeric($args[1])){
 							$target = $this->getServer()->getPlayer($args[0]);
 							
 							if($target instanceof Player){
@@ -144,12 +169,12 @@
 							}
 						}
 						else{
-							$sender->sendMessage(TF::GOLD . "Ussage: /xp <(Optional)player> <level>");
+							$sender->sendMessage(TF::GOLD . "Ussage: /addxp <(Optional)player> <level>");
 							return true;
 						}
 					}
 					else{
-						$sender->sendMessage(TF::GOLD . "Ussage: /xp <(Optional)player> <level>");
+						$sender->sendMessage(TF::GOLD . "Ussage: /addxp <(Optional)player> <level>");
 						return true;
 					}
 					break;
@@ -185,7 +210,7 @@
 								return true;
 							}
 						}
-						else if(!is_numeric($args[0]) && is_numeric($args[1]) && isset($args[1]) && !empty($args[1])){
+						else if(!is_numeric($args[0]) && isset($args[1]) && !empty($args[1]) && is_numeric($args[1])){
 							$target = $this->getServer()->getPlayer($args[0]);
 							
 							if($target instanceof Player){
@@ -218,12 +243,12 @@
 							}
 						}
 						else{
-							$sender->sendMessage(TF::GOLD . "Ussage: /xp <(Optional)player> <level>");
+							$sender->sendMessage(TF::GOLD . "Ussage: /remxp <(Optional)player> <level>");
 							return true;
 						}
 					}
 					else{
-						$sender->sendMessage(TF::GOLD . "Ussage: /xp <(Optional)player> <level>");
+						$sender->sendMessage(TF::GOLD . "Ussage: /remxp <(Optional)player> <level>");
 						return true;
 					}
 					break;
